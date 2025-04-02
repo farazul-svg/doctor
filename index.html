@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>যশোরের বিশেষজ্ঞ চিকিৎসকদের তালিকা</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .specialty-section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .specialty-title {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .doctor-card {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+        .doctor-name {
+            color: #2c3e50;
+            margin: 5px 0;
+        }
+        .doctor-info {
+            margin: 5px 0;
+        }
+        .copy-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+        }
+        .copy-btn:hover {
+            background-color: #2980b9;
+        }
+        .copied-message {
+            color: #27ae60;
+            font-size: 12px;
+            margin-left: 5px;
+            display: none;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .specialty-section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>যশোরের বিশেষজ্ঞ চিকিৎসকদের তালিকা</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- প্রসূতি ও স্ত্রীরোগ বিশেষজ্ঞ -->
+        <div class="specialty-section">
+            <h2 class="specialty-title">প্রসূতি ও স্ত্রীরোগ বিশেষজ্ঞ (Gynaecology & Obstetrics)</h2>
+            
+            <div class="doctor-card">
+                <h3 class="doctor-name">ডা. জেসমিন সুমাইয়া</h3>
+                <p class="doctor-info"><strong>যোগাযোগ:</strong> <span class="phone-number">০১৭১১১৬৪৯১৩</span></p>
+                <p class="doctor-info"><strong>অবস্থান:</strong> যশোর সদর হাসপাতাল</p>
+                <p class="doctor-info"><strong>বিশেষায়িত:</strong> গাইনী ও প্রসূতি রোগ</p>
+                <button class="copy-btn" onclick="copyPhoneNumber(this)">কপি করুন</button>
+                <span class="copied-message">কপি হয়েছে!</span>
+            </div>
+            
+            <div class="doctor-card">
+                <h3 class="doctor-name">ডা. রেবেকা সুলতানা</h3>
+                <p class="doctor-info"><strong>যোগাযোগ:</strong> <span class="phone-number">০১৯৪৬১০২১০২</span></p>
+                <p class="doctor-info"><strong>অবস্থান:</strong> জিডিএল হাসপিটাল এন্ড ডায়াগনোস্টিক ল্যাব</p>
+                <p class="doctor-info"><strong>বিশেষায়িত:</strong> বন্ধ্যাত্ব ও ল্যাপারোস্কোপিক সার্জারি</p>
+                <button class="copy-btn" onclick="copyPhoneNumber(this)">কপি করুন</button>
+                <span class="copied-message">কপি হয়েছে!</span>
+            </div>
+            
+            <div class="doctor-card">
+                <h3 class="doctor-name">ডা. হানিফা বেগম</h3>
+                <p class="doctor-info"><strong>যোগাযোগ:</strong> (পূর্বে শার্শা উপজেলা স্বাস্থ্য কমপ্লেক্সে কর্মরত)</p>
+                <p class="doctor-info"><strong>বিশেষায়িত:</strong> গাইনি বিশেষজ্ঞ</p>
+            </div>
+            
+            <div class="doctor-card">
+                <h3 class="doctor-name">ডা. জিয়াসমীন আক্তার (তনিমা)</h3>
+                <p class="doctor-info"><strong>যোগাযোগ:</strong> <span class="phone-number">০১৭১২২৩৭৭৯৭</span></p>
+                <p class="doctor-info"><strong>অবস্থান:</strong> প্রাইম ডায়াগনস্টিক</p>
+                <p class="doctor-info"><strong>বিশেষায়িত:</strong> প্রসূতি ও স্ত্রীরোগ</p>
+                <button class="copy-btn" onclick="copyPhoneNumber(this)">কপি করুন</button>
+                <span class="copied-message">কপি হয়েছে!</span>
+            </div>
+        </div>
+
+        <!-- হৃদরোগ বিশেষজ্ঞ -->
+        <div class="specialty-section">
+            <h2 class="specialty-title">হৃদরোগ বিশেষজ্ঞ (Cardiology)</h2>
+            
+            <div class="doctor-card">
+                <h3 class="doctor-name">ডা. মোঃ ফজলুল হক খালিদ</h3>
+                <p class="doctor-info"><strong>যোগাযোগ:</strong> <span class="phone-number">০১৭১১৩২০৯১৭</span></p>
+                <p class="doctor-info"><strong>অবস্থান:</strong> কুইন্স হাসপিটাল, যশোর</p>
+                <p class="doctor-info"><strong>বিশেষায়িত:</strong> হৃদরোগ বিশেষজ্ঞ</p>
+                <button class="copy-btn" onclick="copyPhoneNumber(this)">কপি করুন</button>
+                <span class="copied-message">কপি হয়েছে!</span>
+            </div>
+            
+            <div class="doctor-card">
+                <h3 class="doctor-name">ডা. এম শরীফুল আলম</h3>
+                <p class="doctor-info"><strong>যোগাযোগ:</strong> <span class="phone-number">০১৯১২৭৬২২৩৭</span></p>
+                <p class="doctor-info"><strong>অবস্থান:</strong> মেডিকিওর ডায়াগনস্টিক</p>
+                <p class="doctor-info"><strong>বিশেষায়িত:</strong> হৃদরোগ ও নিউরোলজি</p>
+                <button class="copy-btn" onclick="copyPhoneNumber(this)">কপি করুন</button>
+                <span class="copied-message">কপি হয়েছে!</span>
+            </div>
+        </div>
+
+        <!-- অন্যান্য বিশেষজ্ঞরা একইভাবে যোগ করুন -->
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 যশোরের চিকিৎসক তালিকা | সর্বস্বত্ব সংরক্ষিত</p>
+            <p>তথ্য হালনাগাদের জন্য সংশ্লিষ্ট হাসপাতালে যোগাযোগ করুন</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyPhoneNumber(button) {
+            // ফোন নম্বর খুঁজে বের করুন
+            const phoneNumber = button.parentElement.querySelector('.phone-number').innerText;
+            
+            // ক্লিপবোর্ডে কপি করুন
+            navigator.clipboard.writeText(phoneNumber).then(() => {
+                // কপি হয়েছে মেসেজ দেখান
+                const copiedMessage = button.nextElementSibling;
+                copiedMessage.style.display = 'inline';
+                
+                // 2 সেকেন্ড পর মেসেজ লুকান
+                setTimeout(() => {
+                    copiedMessage.style.display = 'none';
+                }, 2000);
+            }).catch(err => {
+                console.error('কপি করতে সমস্যা হয়েছে:', err);
+                alert('ফোন নম্বর কপি করতে সমস্যা হয়েছে। দয়া করে ম্যানুয়ালি কপি করুন।');
+            });
+        }
+    </script>
+</body>
+</html>
